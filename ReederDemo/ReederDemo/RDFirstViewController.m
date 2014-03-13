@@ -15,7 +15,7 @@
 #pragma mark API
 
 + (RDFirstViewController *)defaultViewController {
-    return [[[self alloc] initWithNibName:NSStringFromClass(self) bundle:nil] autorelease];
+    return [[self alloc] initWithNibName:NSStringFromClass(self) bundle:nil];
 }
 
 @end

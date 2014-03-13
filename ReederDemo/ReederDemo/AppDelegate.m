@@ -6,17 +6,17 @@
 //  Copyright 2010 Maybe Apps, LLC. All rights reserved.
 //
 
-#import "ReederDemoAppDelegate.h"
+#import "AppDelegate.h"
 #import "RDFirstViewController.h"
 #import "RDSecondViewController.h"
 
-@interface ReederDemoAppDelegate ()
+@interface AppDelegate ()
 @property (nonatomic, readonly) NSView *currentTabView;
 @property (nonatomic, assign) NSInteger selectedSegment;
 @end
 
 
-@implementation ReederDemoAppDelegate
+@implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)notification {
     [self.contentHoldingView setAnimations:nil];
@@ -54,7 +54,7 @@
     newView.frame = self.contentHoldingView.bounds;
     [newView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
     [[self.contentHoldingView animator] replaceSubview:self.currentTabView with:newView];
-
+    
     [NSAnimationContext endGrouping];
 }
 

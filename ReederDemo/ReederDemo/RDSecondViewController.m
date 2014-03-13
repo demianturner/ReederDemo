@@ -15,7 +15,7 @@
 #pragma mark API
 
 + (RDSecondViewController *)defaultViewController {
-    return [[[self alloc] initWithNibName:NSStringFromClass(self) bundle:nil] autorelease];
+    return [[self alloc] initWithNibName:NSStringFromClass(self) bundle:nil];
 }
 
 @end

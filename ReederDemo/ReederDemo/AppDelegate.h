@@ -1,15 +1,14 @@
 //
-//  ReederDemoAppDelegate.h
+//  AppDelegate.h
 //  ReederDemo
 //
-//  Created by Josh Abernathy on 12/9/10.
-//  Copyright 2010 Maybe Apps, LLC. All rights reserved.
+//  Created by Demian Turner on 13/03/2014.
+//  Copyright (c) 2014 Seagull Systems. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
 
-
-@interface ReederDemoAppDelegate : NSObject <NSApplicationDelegate> {}
+@interface AppDelegate : NSObject <NSApplicationDelegate>
 
 - (IBAction)didSelectSegment:(NSSegmentedControl *)segmentedControl;
 
