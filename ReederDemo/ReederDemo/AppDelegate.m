@@ -44,7 +44,7 @@
     pushAnimation.type = kCATransitionPush;
     pushAnimation.subtype = [segmentedControl selectedSegment] == 0 ? kCATransitionFromLeft : kCATransitionFromRight;
     [pushAnimation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut]];
-    [self.contentHoldingView setAnimations:[NSDictionary dictionaryWithObject:pushAnimation forKey:@"subviews"]];
+    [self.contentHoldingView setAnimations:@{@"subviews" : pushAnimation }];
     
     NSView *newView = [segmentedControl selectedSegment] == 0 ? [RDFirstViewController defaultViewController].view : [RDSecondViewController defaultViewController].view;
     newView.frame = self.contentHoldingView.bounds;
