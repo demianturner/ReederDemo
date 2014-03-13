@@ -31,10 +31,6 @@
 
 #pragma mark API
 
-@synthesize window;
-@synthesize contentHoldingView;
-@synthesize selectedSegment;
-
 - (IBAction)didSelectSegment:(NSSegmentedControl *)segmentedControl {
     if([segmentedControl selectedSegment] == self.selectedSegment) return;
     
